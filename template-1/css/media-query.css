@@ -1,0 +1,157 @@
+@media (min-width: 1280px) {
+    .m_header {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .m_header {
+        display: none !important;
+    }
+    
+    .hero {
+        height: 100vh;
+    }
+    
+    .hero_text {
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .m_header {
+        display: block !important;
+    }
+    
+    .w_header {
+        display: none !important;
+    }
+    
+    .hero_text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero_text p {
+        font-size: 1.3rem;
+    }
+    
+    .section_title, .section_title_white {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-left: 15px;
+    }
+    
+    .photo_bg_wrapper {
+        min-height: 500px;    
+    }
+    
+    .bg_title {
+        margin: 10px 0px;
+    }
+    
+    .box_wrapper {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        padding: 0 30px;
+    }
+    
+    .box {
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+    }
+    
+    .box:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    
+    .box_title {
+        font-size: 2rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .box_subTitle {
+        font-size: 1.8rem;
+        padding: 10px 0px;
+        letter-spacing: -0.3px;
+    }
+    
+    .box_desc {
+        white-space: pre-wrap;
+        font-size: 1.2rem;
+    }
+    
+    .box_tip {
+        white-space: pre-wrap;
+    }
+
+    .content_wrapper {
+        width: 100%;
+        display: block;
+        white-space:nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+    
+    .content_wrapper .content_box {
+        display: inline-block;
+        width: 250px;
+        margin: 0px 10px;
+    }
+    
+    .content_box .content_img {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .content_title {
+        font-size: 1.4rem;
+    }
+
+    .content_text {
+        white-space: pre-wrap;
+        font-size: 1.15rem;
+        letter-spacing: -1px;
+    }
+}
+
+@media (max-width: 414px) {
+    section {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .hero {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .nav_item {
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    
+}
+
+@media (max-width: 320px) {
+    
+}

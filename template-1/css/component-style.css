@@ -1,0 +1,347 @@
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.text_left {
+    text-align: left !important;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.w_header, .m_header {
+    width: 100%;
+    height: 80px;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    /*for IE10*/
+    -ms-display: flexbox;
+    color: #ffffff;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.w_menu {
+    display: table;
+    margin-left: 15px;
+}
+
+.w_menu img{
+    width: 38px !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 8px;
+}
+
+.m_header {
+    height: 60px;
+    padding: 0px;
+    background-color: #232323;
+}
+
+.m_menu {
+    display: flex;
+    justify-content: space-between;
+    /*for IE10*/
+    -ms-display: flexbox;
+}
+
+.m_menu img {
+    width: 25px;
+    margin-left: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.m_menu:hover {
+    cursor: pointer;
+}
+
+/* hambergerIcon css */
+.menu_icon {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.hambergerIcon {
+  height: 7px;
+  width: 40px;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: all ease 0.5s;
+}
+
+.hambergerIcon::before, .hambergerIcon::after {
+  content: "";
+  position: absolute;
+  height: inherit;
+  border-radius: inherit;
+  background-color: inherit;
+  margin: auto;
+  width: 50%;
+  transition: all ease 0.5s;
+}
+
+.hambergerIcon::before {
+  top: -15px;
+  left: 0;
+  transform-origin: left;
+}
+
+.hambergerIcon::after {
+  bottom: -15px;
+  right: 0;
+  transform-origin: right;
+}
+
+.open {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.open::before {
+  top: 0;
+  transform: translateX(100%) rotate(-90deg);
+}
+
+.open::after {
+  bottom: 0;
+  transform: translateX(-100%) rotate(-90deg);
+}
+/* hambergerIcon css */
+
+
+.m_list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #232323;
+}
+
+.m_list .nav_item {
+    display: block;
+}
+
+.nav_item {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    line-height: 80px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.section_title {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: -0.3px;
+    padding: 20px 0;
+}
+
+.section_title_white {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5rem;
+    letter-spacing: -0.3px;
+    padding: 20px 0;
+}
+
+.bg_title {
+    margin: 50px 0px 30px;
+    width: 100%;
+}
+
+.photo_bg_wrapper {
+    width: 100%;
+    min-height: 800px;
+    overflow: hidden;
+    background-image: url(../img/background/g_photography.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*for IE10*/
+    -ms-display: flexbox;
+}
+
+.box {
+    background-color: #ffffff;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.box:hover {
+    -webkit-transform: translate(-20px, -20px);
+    -moz-transform: translate(-20px, -20px);
+    -ms-transform: translate(-20px, -20px);
+    transform: translate(-20px, -20px);
+    -webkit-box-shadow: 10px 9px 22px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 9px 22px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 9px 22px 0px rgba(0, 0, 0, 0.75);
+}
+
+.box>img {
+    margin: 20px auto;
+}
+
+.box_title {
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+
+.box_subTitle {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0px;
+    letter-spacing: -0.3px;
+}
+
+.box_desc {
+    font-size: 1.35rem;
+    letter-spacing: -1.2px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.box_tip {
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*for IE10*/
+    -ms-display: flexbox;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content_wrapper .content_box {
+    width: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    margin: 30px 0px;
+}
+
+.content_box .content_img {
+    width: 100%;
+    height: 300px;
+}
+
+.content_box .content_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.content_box .content_info {
+    background-color: #ffffff;
+    padding: 15px;
+}
+
+.content_title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 3px;
+}
+
+.content_text {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    max-height: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.content_shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: table;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+
+.content_shadow:hover {
+    opacity: 1;
+}
+
+.content_shadow  div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content_shadow p {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: #232323;
+}
+
+.f_widget li {
+    color: #ffffff;
+    font-size: 1.2rem;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.footer_copyright {
+    
+}
+
