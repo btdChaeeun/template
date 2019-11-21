@@ -1,3 +1,14 @@
+/* 롯데마트 행복체*/
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff'); } 
+@font-face { font-family: 'LotteMartHappy'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyBold.woff') format('woff'); } 
+.lottemarthappy * { font-family: 'LotteMartHappy', sans-serif; }
+
+/*롯데마트 드림체*/
+@font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 400; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff'); } 
+@font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 700; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff'); } 
+@font-face { font-family: 'LotteMartDream'; font-style: normal; font-weight: 300; src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff'); } 
+.lottemartdream * { font-family: 'LotteMartDream', sans-serif; }
+
 .container {
     width: 1600px;
     margin: 0 auto;
@@ -145,6 +156,7 @@
 
 .nav_item {
     display: inline-block;
+    font-family: 'LotteMartDream', sans-serif;
     font-size: 1.4rem;
     margin-right: 20px;
     line-height: 80px;
@@ -155,12 +167,14 @@
 
 .section_title {
     text-align: center;
+    font-family: 'LotteMartHappy', sans-serif;
     font-size: 2.5rem;
     letter-spacing: -0.3px;
     padding: 20px 0;
 }
 
 .section_title_white {
+    font-family: 'LotteMartHappy', sans-serif;
     text-align: center;
     color: #ffffff;
     font-size: 2.5rem;
@@ -220,12 +234,14 @@
 }
 
 .box_title {
+    font-family: 'LotteMartHappy', sans-serif;
     font-size: 2.2rem;
     letter-spacing: -0.5px;
     text-align: left;
 }
 
 .box_subTitle {
+    font-family: 'LotteMartHappy', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding: 20px 0px;
@@ -233,14 +249,16 @@
 }
 
 .box_desc {
-    font-size: 1.35rem;
-    letter-spacing: -1.2px;
-    font-weight: 500;
+    font-family: 'LotteMartDream', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: -0.3px;
+    font-weight: 300;
     line-height: 1.5;
     text-align: left;
 }
 
 .box_tip {
+    font-family: 'LotteMartDream', sans-serif;
     padding: 10px 0px;
     text-align: left;
 }
@@ -283,6 +301,7 @@
 }
 
 .content_title {
+    font-family: 'LotteMartDream', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.3px;
@@ -291,13 +310,15 @@
 
 .content_text {
     width: 100%;
+    font-family: 'LotteMartDream', sans-serif;
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: -0.3px;
     max-height: 100px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    padding: 5px 0px;
 }
 
 .content_shadow {
@@ -329,19 +350,77 @@
 }
 
 /* footer */
+.d_flex {
+    display: flex;
+}
 footer {
+    padding: 10px;
     background-color: #232323;
 }
 
-.f_widget li {
+.f_logo {
+    width: 200px;
+}
+
+.f_logo img {
+    width: 150px;
+}
+
+.widget_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.widget_title {
     color: #ffffff;
-    font-size: 1.2rem;
-    letter-spacing: -0.5px;
-    font-weight: 400;
     opacity: 0.7;
+    font-family: 'LotteMartDream', sans-serif;
+}
+
+.f_widget li {
+    font-family: 'LotteMartDream', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    opacity: 0.7;
+    padding: 2px;
+}
+
+.fnb_widget {
+    width: 100%;
+    padding: 10px 0px;
+    /*margin-left: 50px;*/
+}
+
+.fnb_widget li {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+.hr_light {
+    opacity: 0.5;
 }
 
 .footer_copyright {
-    
+    font-family: 'LotteMartDream', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #ffffff;
+    opacity: 0.7;
+    padding: 25px 0px;
 }
 
